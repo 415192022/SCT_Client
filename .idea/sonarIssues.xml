@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/a.regexp">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/ASWorkSpace/D02-QQ/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/ASWorkSpace/D02-QQ/app/src/main/java/com/ueehome/d02_qq/D02QQApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/ASWorkSpace/D02-QQ/app/src/main/java/com/ueehome/d02_qq/YunEnChannel.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/ASWorkSpace/D02-QQ/app/src/main/java/com/ueehome/d02_qq/broadcastreceiver/DoorBellReveiver.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/ASWorkSpace/D02-QQ/app/src/main/java/com/ueehome/d02_qq/common/dbmodel/D02Config.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/ASWorkSpace/D02-QQ/app/src/main/java/com/ueehome/d02_qq/ui/desktop/activity/DesktopActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/ASWorkSpace/D02-QQ/app/src/main/java/com/ueehome/d02_qq/ui/systemconfig/activity/AboutDeviceActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../AliMQTTDemo/AliMQTTDemo/app/src/main/java/com/huzan/alimqttdemo/AliActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/home/HomeFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/home/activity/KnowledgeActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/home/activity/ShoppingMallActivity22.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/home/adapter/ActivityAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/home/adapter/CarListAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/home/model/ActivityBean.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/home/model/BaseBean.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/home/model/KnowledgeBean.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/utils/Constant.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/res/drawable/shape_item_activity.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/res/drawable/shape_item_activity_0.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/res/layout/activity_knowledgel.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/res/layout/activity_pay_way.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/res/layout/activity_shopping_mall22.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/res/layout/fragment_home.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/res/layout/item_activity_layout.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/App.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/CommandUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/FileUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/MainActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/PollingUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/UpdateRemindingReceiver.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_socket.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
