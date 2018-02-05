@@ -29,4 +29,24 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'io.reactivex:rxandroid:1.2.1'
     compile 'io.reactivex:rxjava:1.2.3'
+
+    compile 'com.thefinestartist:finestwebview:1.2.7'
+
+    compile 'com.sdsmdg.harjot:materialshadows:1.2.5'
+
+
+
+    //阿里云物联网套件
+    compile('com.aliyun.alink.linksdk:public-channel-core:0.2.1')
+
+    //阿里云物联网套件(MQTT)
+    compile 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.0'
+    compile 'org.eclipse.paho:org.eclipse.paho.android.service:1.1.1'
+    compile 'com.alibaba:fastjson:1.2.40'
+
+    compile 'com.google.code.gson:gson:2.8.2'
+
+    compile 'com.jiechic.library:xUtils:2.6.14'
+    compile 'org.apache.directory.studio:org.apache.commons.lang:2.6'
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
 }

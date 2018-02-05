@@ -58,7 +58,42 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../AliMQTTDemo/AliIotSuit/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../AliMQTTDemo/AliIotSuit/app/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../AliMQTTDemo/AliIotSuit/app/src/main/java/alisuit/li/com/aliiotsuit/MainActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../AliMQTTDemo/AliIotSuit/app/src/main/res/layout/activity_main.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../AliMQTTDemo/AliIotSuit/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../AliMQTTDemo/AliMQTTDemo/app/src/main/java/com/huzan/alimqttdemo/AliActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../IOTC_Client/app/src/main/res/layout/main.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../IOTC_Device/app/src/main/res/layout/main.xml">
           <value>
             <set />
           </value>
@@ -73,12 +108,37 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/center/activity/ActivityNoticeListDetails.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/center/activity/KnowledgeListDetails.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/center/model/GetCatchModel.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/home/BgImageViewAware.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/home/HomeFragment.java">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/home/activity/KnowledgeActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/home/activity/PayWayActivity.java">
           <value>
             <set />
           </value>
@@ -93,7 +153,37 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/home/adapter/ActivityInnerAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/home/adapter/CarListAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/home/adapter/HomePostSiteListAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/home/adapter/HomePostSiteListInnerAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/home/adapter/HorizontalTypeHomeAdpter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/home/adapter/KnowledgeAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/home/adapter/RecyclerViewNoBugGridLayoutManager.java">
           <value>
             <set />
           </value>
@@ -108,12 +198,42 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/home/model/HomePostListBean.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/home/model/HomePostSiteListBean.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/home/model/KnowledgeBean.java">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/home/model/ParametersBean.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/home/model/PayOrderBean.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/utils/Constant.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/utils/HttpUtilsSingle.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/view/ImageCycleView.java">
           <value>
             <set />
           </value>
@@ -133,6 +253,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/res/layout/activity_notice_list_details.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/res/layout/activity_pay_way.xml">
           <value>
             <set />
@@ -148,7 +273,47 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/res/layout/horizontal_type_home_item.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/res/layout/item_activity_layou_innerlist.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/res/layout/item_activity_layout.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/res/layout/item_activity_shopping_mall22.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/res/layout/item_activity_shopping_mall22_carlist.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/res/layout/item_home_post_list.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/res/layout/item_knowledge.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/res/layout/item_knowledge_layout.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/res/layout/ll_product_detail.xml">
           <value>
             <set />
           </value>
@@ -183,12 +348,57 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/OfflineReconnectReceiver.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/PollingUtils.java">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/SignUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/UpdateRemindingReceiver.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/bean/PayloadBean.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/util/ALiyunIotX509TrustManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/util/Const.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/util/LogUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/util/NewWifiManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/util/OfflineReconnectReceiver.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/util/SimpleClient4IOT.java">
           <value>
             <set />
           </value>
@@ -199,6 +409,36 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Sample_AVAPIs_Client/app/src/main/java/com/tutk/sample/AVAPI/MainActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Sample_AVAPIs_Server/app/src/main/java/com/iotc/sample_AVServer/CommApis.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Sample_AVAPIs_Server/app/src/main/java/com/iotc/sample_AVServer/Sample.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Sample_AVAPIs_Server/app/src/main/res/layout/main.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Sample_P2PTunnelAPIs_agent1/import-summary.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Sample_P2PTunnelAPIs_server/app/src/main/java/com/example/sample_p2ptunnel/MainActivity.java">
           <value>
             <set />
           </value>

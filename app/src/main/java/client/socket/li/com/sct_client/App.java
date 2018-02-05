@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
+import java.io.File;
 import java.io.IOException;
 import java.net.Socket;
 import java.net.UnknownHostException;
@@ -24,6 +25,26 @@ public class App extends Application {
     public static App sApp;
     int index = 0;
     int random=new Random().nextInt(100000);
+
+    private static String localDeviceName;
+    private static File localDeviceNameFile=new File(Environment.getExternalStorageDirectory()+"/devicename");
+
+    public void setLocalDeviceName(String localDeviceName) {
+        App.localDeviceName = localDeviceName;
+    }
+
+
+    public String getLocalDeviceName() {
+        return localDeviceName;
+    }
+
+    public File getLocalDeviceNameFile() {
+        return localDeviceNameFile;
+    }
+
+    public static void setLocalDeviceNameFile(File localDeviceNameFile) {
+        App.localDeviceNameFile = localDeviceNameFile;
+    }
 
     public static String SOCKET_PATH = Environment.getExternalStorageDirectory().getPath();
     ;
@@ -42,9 +63,21 @@ public class App extends Application {
         sApp = this;
         Log.e("zan - > ", SOCKET_PATH);
         if (isMao()) {
-            SECOND_SOCKET = 30;
+            SECOND_SOCKET = 60;
         } else {
-            SECOND_SOCKET = 30;
+            SECOND_SOCKET = 60;
+        }
+        if(FileUtils.isExsitFile(localDeviceNameFile)){
+            String conten=FileUtils.readFile(localDeviceNameFile);
+            Log.d("LMW",conten+"=====");
+            setLocalDeviceName(conten);
+        }else{
+            try {
+                localDeviceNameFile.createNewFile();
+                setLocalDeviceNameFile(localDeviceNameFile);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
