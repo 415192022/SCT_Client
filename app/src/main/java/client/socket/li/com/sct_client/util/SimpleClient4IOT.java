@@ -4,7 +4,9 @@
  */
 package client.socket.li.com.sct_client.util;
 
+import android.util.Base64;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 
@@ -35,6 +37,7 @@ import javax.net.ssl.TrustManager;
 import client.socket.li.com.sct_client.App;
 import client.socket.li.com.sct_client.FileUtils;
 import client.socket.li.com.sct_client.bean.PayloadBean;
+import client.socket.li.com.sct_client.bean.ShareMessageBean;
 
 /**
  * IoT套件JAVA版设备接入demo
@@ -45,8 +48,8 @@ public class SimpleClient4IOT {
 
 
     //用于测试的topic
-    private  String subTopic = "/" + Const.PRODUCT_KEY + "/" + App.sApp.getLocalDeviceName()+ "/regeister";
-    private  String pubTopic = "/" + Const.PRODUCT_KEY  + "/" + App.sApp.getLocalDeviceName() + "/sendMessage";
+    private  String subTopic = "/" + Const.PRODUCT_KEY + "/" + App.sApp.getDevicename()+ "/regeister";
+    private  String pubTopic = "/" + Const.PRODUCT_KEY  + "/" + App.sApp.getDevicename() + "/sendMessage";
 
 /*    public static void main(String... strings) throws Exception {
         //客户端设备自己的一个标记，建议是MAC或SN，不能为空，32字符内
@@ -108,8 +111,14 @@ public class SimpleClient4IOT {
             @Override
             public void messageArrived(String topic, MqttMessage message) throws Exception {
                 String receve=new String(message.getPayload(), "UTF-8");
-                LogUtil.print("接收到消息,来至Topic [" + topic + "] , 内容是:["
-                        + receve + "],  ");
+                Log.d("LMW","接收到消息,来至Topic [" + topic + "] , 内容是:[" + receve + "],  ");
+                String json64=receve;
+                String json=new String(Base64.decode(json64, Base64.DEFAULT));
+                ShareMessageBean shareMessageBean =new Gson().fromJson(json,ShareMessageBean.class);
+                Log.d("LMW","=================="+shareMessageBean);
+                if(null != shareMessageBean && shareMessageBean.getShareMessage() && App.sApp.getDevicename().contains("phone")){
+                    Toast.makeText(App.sApp,"设备"+shareMessageBean.getSharedDeviceName()+"已分享至当前账号",Toast.LENGTH_SHORT).show();
+                }
                 PayloadBean payloadBean=new Gson().fromJson(receve,PayloadBean.class);
                 Log.d("LMW",payloadBean+" "+onDeviceStateLinstenner);
                 if(!App.sApp.getLocalDeviceName().equals(payloadBean.getDeviceName())){
@@ -259,5 +268,13 @@ public class SimpleClient4IOT {
 
     public  void setOnDeviceStateLinstenner(OnDeviceStateLinstenner onDeviceStateLinstenner) {
         this.onDeviceStateLinstenner = onDeviceStateLinstenner;
+    }
+
+    private OnMessageArrived onMessageArrived;
+    public interface OnMessageArrived{
+         void messageArrived(String topic, String receive);
+    }
+    public void setOnMessageArrivedListener(OnMessageArrived onMessageArrived){
+        this.onMessageArrived=onMessageArrived;
     }
 }

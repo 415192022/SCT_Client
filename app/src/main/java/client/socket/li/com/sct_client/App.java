@@ -4,8 +4,14 @@ import android.app.Application;
 import android.os.Environment;
 import android.support.annotation.NonNull;
 import android.util.Log;
-import android.widget.Toast;
 
+import com.google.gson.Gson;
+import com.lidroid.xutils.exception.HttpException;
+import com.lidroid.xutils.http.ResponseInfo;
+import com.lidroid.xutils.http.callback.RequestCallBack;
+
+import org.eclipse.paho.client.mqttv3.IMqttToken;
+import org.eclipse.paho.client.mqttv3.MqttClient;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -14,7 +20,16 @@ import java.io.IOException;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
+
+import client.socket.li.com.sct_client.bean.PayloadBean;
+import client.socket.li.com.sct_client.bean.QueryDeviceIsExistBean;
+import client.socket.li.com.sct_client.bean.QueryPhoneNumberBean;
+import client.socket.li.com.sct_client.model.AliIotImpl;
+import client.socket.li.com.sct_client.util.Const;
+import client.socket.li.com.sct_client.util.SimpleClient4IOT;
 
 /**
  * Created by Zan on 2017/12/18 0018.
@@ -60,6 +75,8 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        init();
         sApp = this;
         Log.e("zan - > ", SOCKET_PATH);
         if (isMao()) {
@@ -219,5 +236,149 @@ public class App extends Application {
 
     public boolean isMao() {
         return type == 0;
+    }
+
+
+
+    private SimpleClient4IOT simpleClient4IOT;
+    String devicename="";
+    String phoneNumber="15502113228";
+    private String deviceSecret;
+    AliIotImpl aliIot;
+    private void init(){
+        aliIot=new AliIotImpl();
+        if(devicename.equals("")){
+            aliIot.queryPhoneNumber(phoneNumber, new RequestCallBack<String>() {
+                @Override
+                public void onSuccess(ResponseInfo<String> responseInfo) {
+                    String json=responseInfo.result;
+                    QueryPhoneNumberBean queryPhoneNumberBean= new Gson().fromJson(json,QueryPhoneNumberBean.class);
+                    if(null !=queryPhoneNumberBean.gettList() && queryPhoneNumberBean.gettList().size()>0){
+                        devicename=queryPhoneNumberBean.gettList().get(0).getPhoneName();
+                        phoneNumber=queryPhoneNumberBean.gettList().get(0).getPhoneNumber();
+                        aliIot.queryDeviceIsExist(devicename, new RequestCallBack<String>() {
+                            @Override
+                            public void onSuccess(ResponseInfo<String> responseInfo) {
+                                String json=responseInfo.result;
+                                QueryDeviceIsExistBean queryDeviceIsExistBean=new Gson().fromJson(json,QueryDeviceIsExistBean.class);
+                                deviceSecret=queryDeviceIsExistBean.getDeviceInfo().getDeviceSecret();
+                                Log.d("LMW","====+++ "+devicename);
+                                try {
+                                    simpleClient4IOT=new SimpleClient4IOT();
+                                    initMQTT2(deviceSecret);
+                                    if(null != onCompleteListener){
+                                        onCompleteListener.onComplete();
+                                    }
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
+                            }
+
+                            @Override
+                            public void onFailure(HttpException error, String msg) {
+
+                            }
+                        });
+                    }else{
+                        Log.d("LMW","获取对应手机名失败");
+
+                    }
+                    Log.d("LMW",phoneNumber+"======"+devicename);
+
+                }
+
+                @Override
+                public void onFailure(HttpException error, String msg) {
+                    Log.d("LMW","   "+msg);
+                }
+            });
+        }else{
+            aliIot.queryDeviceIsExist(devicename, new RequestCallBack<String>() {
+                @Override
+                public void onSuccess(ResponseInfo<String> responseInfo) {
+                    String json=responseInfo.result;
+                    QueryDeviceIsExistBean queryDeviceIsExistBean=new Gson().fromJson(json,QueryDeviceIsExistBean.class);
+                    deviceSecret=queryDeviceIsExistBean.getDeviceInfo().getDeviceSecret();
+                    Log.d("LMW","====+++ "+devicename);
+                    try {
+                        simpleClient4IOT=new SimpleClient4IOT();
+                        initMQTT2(deviceSecret);
+                        if(null != onCompleteListener){
+                            onCompleteListener.onComplete();
+                        }
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+
+                @Override
+                public void onFailure(HttpException error, String msg) {
+
+                }
+            });
+        }
+
+
+    }
+
+    public  void initMQTT2(String deviceSecret) throws Exception {
+//        String devicename="";
+//        if(null== devicename || "".equals(devicename)){
+//            return;
+//        }
+
+        //客户端设备自己的一个标记，建议是MAC或SN，不能为空，32字符内
+//        String clientId = InetAddress.getLocalHost().getHostAddress();
+//        String clientId = "test_"+System.currentTimeMillis();
+        String clientId = MqttClient.generateClientId();
+        ;
+
+        //设备认证
+        Map<String, String> params = new HashMap<String, String>();
+        params.put("productKey", Const.PRODUCT_KEY); //这个是对应用户在控制台注册的 设备productkey
+        params.put("deviceName", devicename); //这个是对应用户在控制台注册的 设备name
+        params.put("clientId", clientId);
+        String t = System.currentTimeMillis() + "";
+        params.put("timestamp", t);
+
+        //MQTT服务器地址，TLS连接使用ssl开头
+        String targetServer = "ssl://" + Const.PRODUCT_KEY + ".iot-as-mqtt.cn-shanghai.aliyuncs.com:1883";
+
+        //客户端ID格式，两个||之间的内容为设备端自定义的标记，字符范围[0-9][a-z][A-Z]
+        String mqttclientId = clientId + "|securemode=2,signmethod=hmacsha1"
+                + ",timestamp=" + t + "|"
+                ;
+
+
+        String mqttUsername =devicename+"&"+Const.PRODUCT_KEY;//mqtt用户名格式
+        String mqttPassword = SignUtil.sign(params, deviceSecret, "hmacsha1");//签名
+        System.err.println("mqttclientId=" + mqttclientId);
+
+//        SimpleClient4IOT.connectMqtt(targetServer, mqttclientId, mqttUsername, mqttPassword, deviceName);
+        simpleClient4IOT.connectMqttAndroid(targetServer, mqttclientId, mqttUsername, mqttPassword, devicename);
+
+    }
+
+    public String getDevicename() {
+        return devicename;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public String getDeviceSecret() {
+        return deviceSecret;
+    }
+
+    public SimpleClient4IOT getSimpleClient4IOT() {
+        return simpleClient4IOT;
+    }
+    public interface OnCompleteListener{
+        void onComplete();
+    }
+    public OnCompleteListener onCompleteListener;
+    public void setOnCompleteListener(OnCompleteListener onCompleteListener){
+        this.onCompleteListener=onCompleteListener;
     }
 }

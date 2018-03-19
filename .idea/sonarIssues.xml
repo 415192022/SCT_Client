@@ -108,6 +108,21 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/base/ExitApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/main/MainActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/main/MainFragmentActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/module/center/activity/ActivityNoticeListDetails.java">
           <value>
             <set />
@@ -233,6 +248,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/versions/UpdateManagerUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/versions/VersionBean.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/view/ImageCycleView.java">
           <value>
             <set />
@@ -328,6 +353,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/AliIotApp.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/App.java">
           <value>
             <set />
@@ -338,12 +368,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/DeviceListRecyclerViewAdpter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/FileUtils.java">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/MainActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/MyDecoration.java">
           <value>
             <set />
           </value>
@@ -368,7 +408,62 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/bean/AllDeviceListByPhoneNumberBean.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/bean/DeviceListBean.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/bean/DeviceStateBean.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/bean/PayloadBean.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/bean/QueryDeviceIsExistBean.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/bean/QueryDeviceStateParmBean.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/bean/QueryPhoneNumberBean.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/bean/SendMessageBean.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/bean/ShareDeviceByPhoneNumberBean.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/bean/ShareMessageBean.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/model/AliIotImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/client/socket/li/com/sct_client/model/IAliIot.java">
           <value>
             <set />
           </value>
@@ -404,6 +499,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_socket.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/item_device_list.xml">
           <value>
             <set />
           </value>
