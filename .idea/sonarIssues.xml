@@ -48,12 +48,37 @@
             <set />
           </value>
         </entry>
+        <entry key="C:/ASWorkSpace/D02-QQ/app/src/main/java/com/ueehome/d02_qq/common/utils/Const.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/ASWorkSpace/D02-QQ/app/src/main/java/com/ueehome/d02_qq/common/utils/WindowUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="C:/ASWorkSpace/D02-QQ/app/src/main/java/com/ueehome/d02_qq/ui/desktop/activity/DesktopActivity.java">
           <value>
             <set />
           </value>
         </entry>
         <entry key="C:/ASWorkSpace/D02-QQ/app/src/main/java/com/ueehome/d02_qq/ui/systemconfig/activity/AboutDeviceActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/ASWorkSpace/D02-QQ/app/src/main/java/com/ueehome/d02_qq/ui/systemconfig/activity/DetectionAndAlarmActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/ASWorkSpace/D02-QQ/app/src/main/java/com/ueehome/d02_qq/ui/wechatbind/data/source/impl/WechatBindDataSourceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/ASWorkSpace/D02-QQ/app/src/main/res/layout/activity_detection_and_alarm.xml">
           <value>
             <set />
           </value>
@@ -109,6 +134,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/base/ExitApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/broadCastReceiver/CheckUpDateReceiver.java">
           <value>
             <set />
           </value>
@@ -243,6 +273,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/utils/DefaultExceptionHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/java/com/haitaoit/qiaoliguoji/utils/HttpUtilsSingle.java">
           <value>
             <set />
@@ -339,6 +374,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/app/src/main/res/layout/ll_product_detail.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../QiaoLiGuoJi/QiaoLiGuoJi/build.gradle">
           <value>
             <set />
           </value>

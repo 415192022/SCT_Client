@@ -9,7 +9,6 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.text.InputType;
 import android.util.Base64;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -22,29 +21,22 @@ import android.widget.Toast;
 import com.google.gson.Gson;
 import com.lidroid.xutils.HttpUtils;
 import com.lidroid.xutils.exception.HttpException;
-import com.lidroid.xutils.http.RequestParams;
 import com.lidroid.xutils.http.ResponseInfo;
 import com.lidroid.xutils.http.callback.RequestCallBack;
 import com.lidroid.xutils.http.client.HttpRequest;
 
 import org.eclipse.paho.client.mqttv3.IMqttToken;
-import org.eclipse.paho.client.mqttv3.MqttClient;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.concurrent.TimeUnit;
 
 import client.socket.li.com.sct_client.bean.AliIotDeviceInfoBean;
 import client.socket.li.com.sct_client.bean.AllDeviceListByPhoneNumberBean;
 import client.socket.li.com.sct_client.bean.DeviceListBean;
 import client.socket.li.com.sct_client.bean.PayloadBean;
-import client.socket.li.com.sct_client.bean.QueryDeviceStateParmBean;
 import client.socket.li.com.sct_client.bean.ShareDeviceByPhoneNumberBean;
 import client.socket.li.com.sct_client.model.AliIotImpl;
-import client.socket.li.com.sct_client.util.Const;
 import client.socket.li.com.sct_client.util.SimpleClient4IOT;
 import client.socket.li.com.sct_client.util.SystemUtils;
 import rx.Observable;
@@ -94,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_socket);
+
 
         App.sApp.setOnCompleteListener(new App.OnCompleteListener() {
             @Override
